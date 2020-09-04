@@ -635,6 +635,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/etc/acdbdata/sheridan/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/sheridan/Hdmi_cal.acdb \
     vendor/motorola/griffin/proprietary/vendor/etc/acdbdata/sheridan/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/sheridan/Headset_cal.acdb \
     vendor/motorola/griffin/proprietary/vendor/etc/acdbdata/sheridan/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/sheridan/Speaker_cal.acdb \
+    vendor/motorola/griffin/proprietary/vendor/etc/camera/imx338_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx338_chromatix.xml \
     vendor/motorola/griffin/proprietary/vendor/etc/camera/mot_imx214_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mot_imx214_chromatix.xml \
     vendor/motorola/griffin/proprietary/vendor/etc/camera/msm8996_mot_camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/msm8996_mot_camera.xml \
     vendor/motorola/griffin/proprietary/vendor/etc/camera/ov5693_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov5693_chromatix.xml \
@@ -715,6 +716,36 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib/libactuator_mot_ak7371.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_mot_ak7371.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libcamerabgproc-jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamerabgproc-jni.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libchromaflash.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromaflash.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_4k_ihdr_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_4k_ihdr_video_3a.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_4k_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_4k_video_3a.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_common.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_cpp_hfr_120.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_cpp_hfr_60.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_cpp_ihdr_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_cpp_ihdr_video_4k.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_cpp_ihdr_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_cpp_ihdr_video.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_cpp_liveshot_4k_ihdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_cpp_liveshot_4k_ihdr.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_cpp_liveshot_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_cpp_liveshot_4k.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_cpp_liveshot_ihdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_cpp_liveshot_ihdr.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_cpp_liveshot.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_cpp_qtr_res_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_cpp_qtr_res_snapshot.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_cpp_snapshot.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_cpp_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_cpp_video_4k.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_cpp_video.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_default_ihdr_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_default_ihdr_video.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_default_video.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_hfr_120_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_hfr_120_3a.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_hfr_120.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_hfr_60_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_hfr_60_3a.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_hfr_60.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_ihdr_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_ihdr_video_3a.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_ihdr_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_ihdr_video_4k.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_postproc.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_qtr_res_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_qtr_res_preview_3a.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_qtr_res_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_qtr_res_snapshot.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_snapshot.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_video_4k.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_zsl_preview_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_zsl_preview_3a.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_imx338_zsl_video_3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx338_zsl_video_3a.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_mot_imx214_4k_ihdr_video_3A.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx214_4k_ihdr_video_3A.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_mot_imx214_4k_video_3A.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx214_4k_video_3A.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libchromatix_mot_imx214_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mot_imx214_common.so \
@@ -792,6 +823,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/griffin/proprietary/vendor/lib/libmmcamera_hvx_zzHDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hvx_zzHDR.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libmmcamera_imglib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imglib.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libmmcamera_imglib_faceproc_adspstub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imglib_faceproc_adspstub.so \
+    vendor/motorola/griffin/proprietary/vendor/lib/libmmcamera_imx338.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx338.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_interface.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libmmcamera_isp_abf47.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_abf47.so \
     vendor/motorola/griffin/proprietary/vendor/lib/libmmcamera_isp_aec_bg_stats47.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_aec_bg_stats47.so \
